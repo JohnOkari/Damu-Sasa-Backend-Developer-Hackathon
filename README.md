@@ -13,9 +13,6 @@ Welcome to the Doctor-Patient Appointment API, a Ruby on Rails application that 
 - **Admin Dashboard:** Admin users can view and manage all appointments, with the ability to mark them as fulfilled or missed.
 
 ## Getting Started
-#### Running a Rails Application from GitHub Locally
-
-To run a Rails application from GitHub locally, you can follow these general steps:
 
 1. **Clone the Repository**: Start by cloning the repository of the Rails application from GitHub. You can use the `git clone` command followed by the repository URL. For example:
    ```
@@ -94,7 +91,7 @@ rspec
 John Okari.
 ex. John Okari
 
-Live github link: https://github.com/JohnOkari/doctor-patient-appointment-API
+Live github link: https://github.com/JohnOkari/Damu-Sasa-Backend-Developer-Hackathon
  
 ## Licence
 MIT License
