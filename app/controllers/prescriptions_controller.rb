@@ -1,7 +1,8 @@
 class PrescriptionsController < ApplicationController
+  before_action :set_prescription, only: %i[ show update destroy ]
 
 
-  # get current_user from session
+    # get current_user from session
     def current_user
       @current_user ||= User.find(session[:user_id]) if session[:user_id]
     end
@@ -12,8 +13,7 @@ class PrescriptionsController < ApplicationController
 
     render json: @prescriptions
   end
-
-
+  
   # POST /prescriptions
   def create
     @prescription = Prescription.new(prescription_params)
@@ -34,6 +34,6 @@ class PrescriptionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def prescription_params
-      params.require(:prescription).permit(:patient_id, :doctor_id, :appointment_id, :medication, :instructions)
+      params.require(:prescription).permit(:user_id, :appointment_id, :medication, :instructions)
     end
 end

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # Define routes for the 'services' resource with only 'index' and 'create' actions
+  resources :services,  only: [:index, :create]
+  # Define routes for the 'services' resource with only 'index' and 'create' actions
   resources :prescriptions, only: [:index, :create]
   # Define routes for the 'users' resource with only 'index' and 'create' actions
   resources :users,  only: [:index, :create]

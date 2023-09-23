@@ -1,6 +1,8 @@
 class Appointment < ApplicationRecord
     belongs_to :user
     has_one :prescription
+    belongs_to :service
+
 
     
     # enum status: { pending: 0, fulfilled: 1, missed: 2 }

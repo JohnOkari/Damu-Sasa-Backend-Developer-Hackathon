@@ -1,13 +1,14 @@
 
 # Doctor-Patient Appointment API
 
-Welcome to the Doctor-Patient Appointment API, a Ruby on Rails application that allows patients to schedule appointments with doctors for various medical services. This API is designed to manage appointments, prescriptions, user authentication, and email confirmations.
+Welcome to the Doctor-Patient Appointment API, a Ruby on Rails application that allows patients to schedule appointments with doctors for various medical services. This API is designed to manage appointments, prescriptions, services, user authentication, and email confirmations.
 
 
 ## Features
 
 - **User Authentication:** Patients are required to sign up and log in before booking an appointment.
 - **Prescriptions:** Doctor(Admin) can add Prescriptions.
+- **Service Selection:** Users can select from various medical services when booking an appointment.
 - **Working Hours:** Appointments can only be booked during specified working hours (8 am to 5 pm).
 - **Email Confirmation:** Users receive a confirmation email after successfully booking an appointment.
 - **Admin Dashboard:** Admin users can view and manage all appointments, with the ability to mark them as fulfilled or missed.
@@ -66,6 +67,8 @@ To use the API, you can make HTTP requests to the provided endpoints. Here's an 
 - **Managing patient prescriptions:**
   - `POST /api/prescriptions`: Add medical Prescriptions.
 
+- **Services:**
+  - `POST /api/services`: Add medical services.
 
 ## Authentication
 
